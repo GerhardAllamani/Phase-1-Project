@@ -42,7 +42,7 @@ public class Operations {
     public void searchFileBinary(String fileName){ //uses binary seach for quick search of the required file
         File file = new File(path + "" );
         ArrayList<File> files = new ArrayList<>(Arrays.asList(file.listFiles()));
-        if(binarySearch(files , fileName, files.size()) == 0){
+        if(binarySearch(files , fileName, files.size()) != -1){
             System.out.println("File " + fileName + " found!");
         }
         else
